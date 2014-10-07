@@ -24,4 +24,9 @@ var Switch8 = function(options) {
   if(options.disabled) {
     el.setAttribute("disabled", "disabled");
   }
+  
+  // checked color
+  if(options.checkedColor !== null || options.checkedColor !== "") {
+    el.style.backgroundImage = options.checkedColor;
+  }
 }
