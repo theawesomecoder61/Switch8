@@ -3,30 +3,33 @@ Switch8
 
 Beautiful switches that look like iOS 7 and iOS 8 switches.
 
-### What do they look like?
-![switch8](http://i.imgur.com/8WNMXgG.png)
+## What do they look like?
+| Switch8        | iOS 8           |
+| ------------- |:-------------:|
+| ![switch8](http://i.imgur.com/8WNMXgG.png) | ![ios8](http://i.imgur.com/OA7HW81.jpg) |
 
-Kinda like the switches on iOS 7 and iOS 8.
+~ They are not the same picture. There is a difference between the two pictures.
 
-### Getting started
-It's simple! Either:
-- link the script
-- or both the script and stylesheet
+## Getting started
+It's simple!
 
-in your head.
+`<link rel="stylesheet" href="path/to/switch8.css">`
 
-### Using Switch8
-##### HTML
-Make a `<input type="checkbox">` in your body.
-##### Javascript
-Put `var beautifulSwitch = new Switch8();` in your DOM load event.
+`<script src="path/to/switch8.js"></script>`
 
-### Options
-#### elem
+## Using Switch8
+#### HTML
+Make a `<input type="checkbox" class="switch8">` in your body.
+### Javascript
+Put `var beautifulSwitch = new Switch8({ elem: "#myCB" });` in your DOM load event.
+
+## Options
+### elem - String
 Defines the element's query
+### checked - Boolean (true/false)
+Sets the switch's state
+### disable - Boolean (true/false)
+Prevents user from toggling the switch
 
-### Public release?
-Maybe mid to late October 2014.
-
-### Copyright stuff
+## Copyright stuff
 iOS is a registered trademark of Apple Inc. All rights reserved. Switch8 or theawesomecoder61 are not affiliated with iOS or Apple Inc.
