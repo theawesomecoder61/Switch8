@@ -20,10 +20,10 @@ var Switch8 = function(options) {
   }
 
   // colors
-  if(el.checked && options.checkedColor !== "") {
+  if(el.checked && options.checkedColor !== null) {
     el.style.background = options.checkedColor;
   } else {
-    if(options.uncheckedColor !== "") {
+    if(options.uncheckedColor !== null) {
       el.style.background =  options.uncheckedColor;
     } else {
       el.style.background = "#e5e5e5";
@@ -32,10 +32,10 @@ var Switch8 = function(options) {
 
   // toggle colors
   el.onclick = function() { 
-    if(el.checked && options.checkedColor !== "") {
+    if(el.checked && options.checkedColor !== null) {
       el.style.background = options.checkedColor;
     } else {
-      if(options.uncheckedColor !== "") {
+      if(options.uncheckedColor !== null) {
         el.style.background =  options.uncheckedColor;
       } else {
         el.style.background = "#e5e5e5";
