@@ -1,9 +1,3 @@
-/*
-
-unminifed version of Switch8
-
-*/
-
 var Switch8 = function(options) {
   // variables
   var el = document.querySelector(options.elem);
