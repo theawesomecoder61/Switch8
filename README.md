@@ -11,5 +11,5 @@ Kinda like the switches on iOS 7 and iOS 8.
 ### Public release?
 Maybe mid to late October 2014.
 
-### Copyright notices
-iOS is a registered trademark of Apple Inc. All rights reserved. Switch8 is not affiliated with iOS or Apple Inc.
+### Copyright stuff
+iOS is a registered trademark of Apple Inc. All rights reserved. Switch8 or theawesomecoder61 are not affiliated with iOS or Apple Inc.
