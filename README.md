@@ -19,9 +19,9 @@ It's simple!
 
 ## Using Switch8
 #### HTML
-Make a `<input type="checkbox" class="switch8">` in your body.
+`<input type="checkbox" class="switch8">`
 ### Javascript
-Put `var beautifulSwitch = new Switch8({ elem: "#myCB" });` in your DOM load event.
+`var beautifulSwitch = new Switch8({ elem: "#myCB" });`
 
 ## Options
 ### elem - String
