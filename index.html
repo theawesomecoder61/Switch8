@@ -10,49 +10,15 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="javascripts/scrollspy.js"></script>
     <title>Switch8</title>
     <style>
       .fa-toggle-on {
         color: #4cd964;
       }
-      .scrollspy {
-        position: fixed;
-        z-index: 7777;
-        background: #fff;
-        padding: 14px;
-        box-shadow: 0 0 20px #000;
-        border-radius: 8px;
-        border: 1px solid #000;
-      }
-      .scrollspy li {
-        list-style-type: none;
-        border-bottom: 1px solid #000;
-        text-align: center;
-      }
-      .scrollspy li:last-child {
-        border-bottom: 0;
-      }
     </style>
     <script>
       $(document).ready(function() {
 
-        $("#main_content h2").each(function() {
-          $(".scrollspy").append('<li class="ss-' + $(this).find("a").attr("name") + '">' + $(this).text() + '</li>');
-        });
-
-        var enter = "", exit = "";
-        $("#main_content h2").on("scrollSpy:enter", function() {
-          enter = $(this).find("a").attr("name");
-          $(".ss-" + enter + "").css("font-weight", "bold");
-        });
-
-        $("#main_content h2").on("scrollSpy:exit", function() {
-          exit = $(this).find("a").attr("name");
-          $(".ss-" + exit + "").css("font-weight", "normal");
-        });
-
-        $("#main_content h2").scrollSpy();
       });
     </script>
   </head>
@@ -77,8 +43,6 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-
-        <ul class="scrollspy"></ul>
 
         <h2>
           <a name="what-do-they-look-like" class="anchor" href="#what-do-they-look-like"><span class="octicon octicon-link"></span></a>What do they look like?</h2>
@@ -153,5 +117,3 @@
 
   </body>
 </html>
-
-
