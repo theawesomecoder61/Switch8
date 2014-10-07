@@ -14,19 +14,39 @@ var Switch8 = function(options) {
   } else {
     console.log("Switch already is Switch8'd! Ya dun goofed!");
   }
-  
+
   // checked
   if(options.checked) {
     el.setAttribute("checked", "checked");
   }
-  
+
   // disabled
   if(options.disabled) {
     el.setAttribute("disabled", "disabled");
   }
-  
-  // checked color
-  if(options.checkedColor !== null || options.checkedColor !== "") {
-    el.style.backgroundImage = options.checkedColor;
+
+  // colors
+  if(el.checked && options.checkedColor !== "") {
+    el.style.background = options.checkedColor;
+  } else {
+    if(options.uncheckedColor !== "") {
+      el.style.background =  options.uncheckedColor;
+    } else {
+      el.style.background = "#e5e5e5";
+    }
   }
+
+  // toggle colors
+  el.onclick = function() { 
+    if(el.checked && options.checkedColor !== "") {
+      el.style.background = options.checkedColor;
+    } else {
+      if(options.uncheckedColor !== "") {
+        el.style.background =  options.uncheckedColor;
+      } else {
+        el.style.background = "#e5e5e5";
+      }
+    }
+  }
+
 }
