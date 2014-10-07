@@ -270,10 +270,11 @@ Full-Width Styles
 }
 
 #forkme_banner {
+  text-align: center;
   display: block;
   position: fixed;
   top:0;
-  right: 30px;
+  right: 60px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
