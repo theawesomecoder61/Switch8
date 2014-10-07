@@ -5,6 +5,8 @@ unminifed version of Switch8
 */
 
 var Switch8 = function(options) {
+  // defaults
+  options.checked = typeof options.checked !== 'undefined' ? options.checked : false;
   // variables
   var el = document.querySelector(options.elem);
 
