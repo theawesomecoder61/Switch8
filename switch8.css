@@ -77,10 +77,10 @@
   transition-timing-function: cubic-bezier(0.42, 0.8, 0.58, 1.2);
 }
 .switch8:checked {
-  background-image: -webkit-linear-gradient(-180deg, attr(data-color) 0%, attr(data-color) 100%);
+  background-image: -webkit-linear-gradient(-180deg, #4cd964 0%, #4dd865 100%);
   background-image: -moz-linear-gradient(-180deg, #4cd964 0%, #4dd865 100%);
   background-image: -o-linear-gradient(-180deg, #4cd964 0%, #4dd865 100%);
-  background-image: linear-gradient(-180deg, attr(data-color)  0%, attr(data-color) 100%);
+  background-image: linear-gradient(-180deg, #4cd964 0%, #4dd865 100%);
 }
 .switch8:checked::after {
   -webkit-transform: translate3d(16px, 0, 0);
@@ -142,10 +142,4 @@
 }
 .switch8::after {
   background: white;
-}
-.switch8:checked {
-  background-image: -webkit-linear-gradient(-180deg, #4cd964 0%, #4dd865 100%);
-  background-image: -moz-linear-gradient(-180deg, #4cd964 0%, #4dd865 100%);
-  background-image: -o-linear-gradient(-180deg, #4cd964 0%, #4dd865 100%);
-  background-image: linear-gradient(-180deg, #4cd964 0%, #4dd865 100%);
 }
