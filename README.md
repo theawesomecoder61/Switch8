@@ -3,9 +3,8 @@ Switch8
 
 Beautiful switches that look like iOS 7 and iOS 8 switches.
 
-### Version 1.4
-- added unchecked color (there is a bug found)
-- fixed several other bugs
+### Version 2.0
+- fixed the unchecked color glitch!
  
 
 ## What do they look like?
