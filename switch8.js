@@ -20,11 +20,16 @@ var Switch8 = function(options) {
   }
 
   // colors
+    // checked
     if(el.checked && options.checkedColor !== null) {
       el.style.background = options.checkedColor;
-    } else if(!el.checked || options.checkedColor === null) {
+    } else {
+      if(!el.checked || options.checkedColor === null) {
         el.style.background = "#e5e5e5";
-    } else if(!el.checked && options.uncheckedColor !== null) {
+      }
+    }
+    // unchecked
+    if(!el.checked && options.uncheckedColor !== null) {
       el.style.background = options.uncheckedColor;
     } else {
       if(!el.checked || options.uncheckedColor === null) {
@@ -34,11 +39,16 @@ var Switch8 = function(options) {
 
   // toggle colors
   el.onclick = function() {
+    // checked
     if(el.checked && options.checkedColor !== null) {
       el.style.background = options.checkedColor;
-    } else if(!el.checked || options.checkedColor === null) {
+    } else {
+      if(!el.checked || options.checkedColor === null) {
         el.style.background = "#e5e5e5";
-    } else if(!el.checked && options.uncheckedColor !== null) {
+      }
+    }
+    // unchecked
+    if(!el.checked && options.uncheckedColor !== null) {
       el.style.background = options.uncheckedColor;
     } else {
       if(!el.checked || options.uncheckedColor === null) {
