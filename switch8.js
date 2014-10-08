@@ -21,19 +21,19 @@ var Switch8 = function(options) {
 
   // colors
     // checked
-    if(el.checked && options.checkedColor !== null) {
+    if(el.checked && options.checkedColor !== "") {
       el.style.background = options.checkedColor;
     } else {
-      if(!el.checked || options.checkedColor === null) {
+      if(!el.checked || options.checkedColor == "") {
         el.style.background = "#e5e5e5";
       }
     }
     // unchecked
-    if(!el.checked && options.uncheckedColor !== null) {
+    if(!el.checked && options.uncheckedColor !== "") {
       el.style.background = options.uncheckedColor;
     } else {
-      if(el.checked || options.uncheckedColor === null) {
-        if(options.checkedColor !== null) {
+      if(el.checked || options.uncheckedColor == "") {
+        if(options.checkedColor !== "") {
       	  el.style.background = options.checkedColor;
         } else {
       	  el.style.background = "#4cd964";
@@ -44,20 +44,21 @@ var Switch8 = function(options) {
   // toggle colors
   el.onclick = function() {
     // checked
-    if(el.checked && options.checkedColor !== null) {
+    if(el.checked && options.checkedColor !== "") {
       el.style.background = options.checkedColor;
     } else {
-      if(!el.checked || options.checkedColor === null) {
+      if(!el.checked || options.checkedColor == "") {
         el.style.background = "#e5e5e5";
       }
     }
     // unchecked
-    if(!el.checked && options.uncheckedColor !== null) {
+    if(!el.checked && options.uncheckedColor !== "") {
       el.style.background = options.uncheckedColor;
     } else {
-      if(options.uncheckedColor === null) {
+      if(options.checkedColor !== "" || options.uncheckedColor == "") {
         el.style.background = "#4cd964";
-      } else {
+      }
+      if(options.checkedColor !== "" && options.uncheckedColor !== "") {
         el.style.background = options.checkedColor;
       }
     }
