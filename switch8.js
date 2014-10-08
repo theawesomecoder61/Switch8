@@ -32,8 +32,12 @@ var Switch8 = function(options) {
     if(!el.checked && options.uncheckedColor !== null) {
       el.style.background = options.uncheckedColor;
     } else {
-      if(!el.checked || options.uncheckedColor === null) {
-      	el.style.background = "#4cd964";
+      if(el.checked || options.uncheckedColor === null) {
+        if(options.checkedColor !== null) {
+      	  el.style.background = options.checkedColor;
+        } else {
+      	  el.style.background = "#4cd964";
+        }
       }
     }
 
@@ -51,8 +55,10 @@ var Switch8 = function(options) {
     if(!el.checked && options.uncheckedColor !== null) {
       el.style.background = options.uncheckedColor;
     } else {
-      if(!el.checked || options.uncheckedColor === null) {
-      	el.style.background = "#4cd964";
+      if(options.uncheckedColor === null) {
+        el.style.background = "#4cd964";
+      } else {
+        el.style.background = options.checkedColor;
       }
     }
   }
