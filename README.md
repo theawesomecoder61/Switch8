@@ -24,12 +24,16 @@ It's simple!
 `var beautifulSwitch = new Switch8({ elem: "#myCB" });`
 
 ## Options
-### elem - String
+### elem - string
 Defines the element's query
-### checked - Boolean (true/false)
+### checked - boolean
 Sets the switch's state
-### disable - Boolean (true/false)
+### disable - boolean
 Prevents user from toggling the switch
+### checkedColor - string (hex, rgba)
+Change the color of the checked state
+### uncheckedColor - string (hex, rgba)
+Change the color of the unchecked state
 
 ## Copyright stuff
 iOS is a registered trademark of Apple Inc. All rights reserved. Switch8 or theawesomecoder61 are not affiliated with iOS or Apple Inc.
