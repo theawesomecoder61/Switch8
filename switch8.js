@@ -23,22 +23,25 @@ var Switch8 = function(options) {
   if(el.checked && options.checkedColor !== null) {
     el.style.background = options.checkedColor;
   } else {
-    if(options.uncheckedColor !== null) {
-      el.style.background =  options.uncheckedColor;
-    } else {
-      el.style.background = "#e5e5e5";
-    }
+    el.style.background = "#e5e5e5";
   }
 
   // toggle colors
-  el.onclick = function() { 
+  el.onclick = function() {
+    // checked
     if(el.checked && options.checkedColor !== null) {
       el.style.background = options.checkedColor;
     } else {
-      if(options.uncheckedColor !== null) {
-        el.style.background =  options.uncheckedColor;
-      } else {
+      if(!el.checked || options.checkedColor === null) {
         el.style.background = "#e5e5e5";
+      }
+    }
+    // unchecked
+    if(!el.checked && options.uncheckedColor !== null) {
+      el.style.background = options.uncheckedColor;
+    } else {
+      if(!el.checked || options.uncheckedColor === null) {
+      	el.style.background = "#4cd964";
       }
     }
   }
