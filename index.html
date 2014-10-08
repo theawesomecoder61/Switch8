@@ -1,46 +1,52 @@
-<!--
-
-iOS is a registered trademark of Apple Inc. All rights reserved. Switch8 or theawesomecoder61 are not affiliated with iOS or Apple Inc.
-
--->
-
 <!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Switch8</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="http://theawesomecoder61.github.io/Switch8/stylesheets/styles.css">
+    <link rel="stylesheet" href="http://theawesomecoder61.github.io/Switch8/stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://jmblog.github.io/color-themes-for-google-code-prettify/css/themes/tomorrow-night-eighties.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <style>.prettyprint ol.linenums > li {list-style-type: decimal; color: #ccc; }</style>
+    <script src="http://theawesomecoder61.github.io/Switch8/javascripts/respond.js"></script>
+    <style>
+      h1 .fa-toggle-on {
+        color: #4cd964;
+      }
+      .red {
+        color: red;
+      }
+      .blue {
+        color: skyblue;
+      }
+      .disabled {
+        opacity : 0.6;
+      }
+      .prettyprint ol.linenums > li {
+        list-style-type: decimal;
+        color: #ccc;
+      }
+    </style>
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/theawesomecoder61/Switch8">View On GitHub</a></li>
-          <li class="downloads"><a href="https://raw.githubusercontent.com/theawesomecoder61/Switch8/master/switch8.js">JS</a></li>
-          <li class="downloads"><a href="https://raw.githubusercontent.com/theawesomecoder61/Switch8/master/switch8.css">CSS</a></li>
-          <li class="downloads"><a href="https://github.com/theawesomecoder61/Switch8/zipball/master">ZIP</a></li>
-          <!-- <li class="downloads"><a href="https://github.com/theawesomecoder61/Switch8/tarball/master">TAR</a></li> -->
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+    <div id="header">
+      <nav>
+        <li class="fork"><a href="https://github.com/theawesomecoder61/Switch8">View On GitHub</a></li>
+        <li class="downloads"><a href="https://raw.githubusercontent.com/theawesomecoder61/Switch8/master/switch8.js">JS</a></li>
+        <li class="downloads"><a href="https://raw.githubusercontent.com/theawesomecoder61/Switch8/master/switch8.css">CSS</a></li>
+        <li class="downloads"><a href="https://github.com/theawesomecoder61/Switch8/zipball/master">ZIP</a></li>
+        <!-- <li class="downloads"><a href="https://github.com/theawesomecoder61/Switch8/tarball/master">TAR</a></li> -->
+        <li class="title">DOWNLOADS</li>
+      </nav>
+    </div><!-- end header -->
 
     <div class="wrapper">
 
       <section>
         <div id="title">
-          <h1>Switch8</h1>
+          <h1><i class="fa fa-toggle-on"></i> Switch8</h1>
           <p>Beautiful switches that look like iOS 7 and iOS 8 switches.</p>
           <hr>
           <span class="credits left">© 2014 <a href="https://github.com/theawesomecoder61">theawesomecoder61</a></span>
@@ -49,96 +55,97 @@ iOS is a registered trademark of Apple Inc. All rights reserved. Switch8 or thea
         </div>
 
         <h2>
-<a name="what-do-they-look-like" class="anchor" href="#what-do-they-look-like"><span class="octicon octicon-link"></span></a>What do they look like?</h2>
+          <a name="what-do-they-look-like" class="anchor" href="#what-do-they-look-like"><span class="octicon octicon-link"></span></a>What do they look like?</h2>
 
-<table>
-<thead><tr>
-<th>Switch8</th>
-<th align="center">iOS 8</th>
-</tr></thead>
-<tbody><tr>
-<td><img src="http://i.imgur.com/8WNMXgG.png" alt="switch8"></td>
-<td align="center"><img src="http://i.imgur.com/OA7HW81.jpg" alt="ios8"></td>
-</tr></tbody>
-</table><p>They are not the same picture. There is a difference between the two pictures.</p>
+        <table>
+          <thead><tr>
+            <th>Switch8</th>
+            <th align="center">iOS 8</th>
+            </tr></thead>
+          <tbody><tr>
+            <td><img src="http://i.imgur.com/8WNMXgG.png" alt="switch8"></td>
+            <td align="center"><img src="http://i.imgur.com/OA7HW81.jpg" alt="ios8"></td>
+            </tr></tbody>
+        </table><p>They are not the same picture. There is a difference between the two pictures.</p>
+
+        <h2>
+          <a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a><i class="fa fa-flag-checkered"></i> Getting started</h2>
+
+        <p>Super easy!</p>
+
+        <h3>
+          <a name="cdn" class="anchor" href="#cdn"><span class="octicon octicon-link"></span></a>CDN</h3>
+
+        <p><pre class="prettyprint lang-html linenums prettyprinted"><ol class="linenums"><li class="L0"><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://raw.githack.com/theawesomecoder61/Switch8/master/switch8.css"</span><span class="tag">&gt;</span></li><li class="L1"><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"https://raw.githack.com/theawesomecoder61/Switch8/master/switch8.js"</span><span class="tag">&gt;&lt;/script&gt;</span></li></ol></pre></p>
+
+      <p><strong>Note!</strong> The links above are hosted on this website, so they may be slow sometimes.</p>
+
+      <h3>
+        <a name="locally" class="anchor" href="#locally"><span class="octicon octicon-link"></span></a>Locally</h3>
+
+      <p><pre class="prettyprint lang-html linenums prettyprinted"><ol class="linenums"><li class="L0"><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"path/to/switch8.css"</span><span class="tag">&gt;</span></li><li class="L1"><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"path/to/switch8.js"</span><span class="tag">&gt;&lt;/script&gt;</span></li></ol></pre></p>
+
+    <h2>
+      <a name="demos" class="anchor" href="#demos"><span class="octicon octicon-link"></span></a><i class="fa fa-play"></i> Demos</h2>
+
+    <p data-height="481" data-theme-id="0" data-slug-hash="ueAgK" data-default-tab="result" data-user="theawesomecoder61" class='codepen'>See the Pen <a href='http://codepen.io/theawesomecoder61/pen/ueAgK/'>Switch8 Demo</a> by Andrew (<a href='http://codepen.io/theawesomecoder61'>@theawesomecoder61</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    <script async src="//codepen.io/assets/embed/ei.js"></script>
+
+    <h2>
+      <a name="using-switch8" class="anchor" href="#using-switch8"><span class="octicon octicon-link"></span></a><i class="fa fa-toggle-on"></i> Using Switch8</h2>
+
+    <h3>
+      <a name="html" class="anchor" href="#html"><span class="octicon octicon-link"></span></a><i class="fa fa-code"></i> HTML</h3>
+
+    <p><pre class="prettyprint lang-html linenums prettyprinted"><ol class="linenums"><li class="L0"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"switch8"</span><span class="tag">&gt;</span></li></ol></pre></p>
+
+  <p>HTML customizations coming in version 2.0!</p>
+
+  <h4>
+    <a name="or" class="anchor" href="#or"><span class="octicon octicon-link"></span></a>or</h4>
+
+  <h3>
+    <a name="javascript" class="anchor" href="#javascript"><span class="octicon octicon-link"></span></a><span>{ }</span> Javascript</h3>
+
+  <p><pre class="prettyprint lang-js linenums prettyprinted"><ol class="linenums"><li class="L0"><span class="kwd">var</span><span class="pln"> beautifulSwitch </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Switch8</span><span class="pun">({</span><span class="pln"> elem</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#myCB"</span><span class="pln"> </span><span class="pun">});</span></li></ol></pre></p>
+
+<p>You can customize your Switch8 in JS!</p>
 
 <h2>
-<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h2>
-
-<p>Super easy!</p>
+  <a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a><i class="fa fa-cogs"></i> Options</h2>
 
 <h3>
-<a name="cdn" class="anchor" href="#cdn"><span class="octicon octicon-link"></span></a>CDN</h3>
-
-<p><pre class="prettyprint lang-html linenums prettyprinted"><ol class="linenums"><li class="L0"><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://raw.githack.com/theawesomecoder61/Switch8/master/switch8.css"</span><span class="tag">&gt;</span></li><li class="L1"><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"https://raw.githack.com/theawesomecoder61/Switch8/master/switch8.js"</span><span class="tag">&gt;&lt;/script&gt;</span></li></ol></pre></p>
-
-<p><strong>Note!</strong> The links above are hosted on this website, so they may be slow sometimes.</p>
-
-<h3>
-<a name="locally" class="anchor" href="#locally"><span class="octicon octicon-link"></span></a>Locally</h3>
-
-<p><pre class="prettyprint lang-html linenums prettyprinted"><ol class="linenums"><li class="L0"><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"path/to/switch8.css"</span><span class="tag">&gt;</span></li><li class="L1"><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"path/to/switch8.js"</span><span class="tag">&gt;&lt;/script&gt;</span></li></ol></pre></p>
-
-<h2>
-<a name="demos" class="anchor" href="#demos"><span class="octicon octicon-link"></span></a>Demos</h2>
-
-<p data-height="481" data-theme-id="0" data-slug-hash="ueAgK" data-default-tab="result" data-user="theawesomecoder61" class='codepen'>See the Pen <a href='http://codepen.io/theawesomecoder61/pen/ueAgK/'>Switch8 Demo</a> by Andrew (<a href='http://codepen.io/theawesomecoder61'>@theawesomecoder61</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//codepen.io/assets/embed/ei.js"></script>
-
-<h2>
-<a name="using-switch8" class="anchor" href="#using-switch8"><span class="octicon octicon-link"></span></a>Using Switch8</h2>
-
-<h3>
-<a name="html" class="anchor" href="#html"><span class="octicon octicon-link"></span></a>HTML</h3>
-
-<p><pre class="prettyprint lang-html linenums prettyprinted"><ol class="linenums"><li class="L0"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"switch8"</span><span class="tag">&gt;</span></li></ol></pre></p>
-
-<p>HTML customizations coming in version 2.0!</p>
-
-<h4>
-<a name="or" class="anchor" href="#or"><span class="octicon octicon-link"></span></a>or</h4>
-
-<h3>
-<a name="javascript" class="anchor" href="#javascript"><span class="octicon octicon-link"></span></a>Javascript</h3>
-
-<p><pre class="prettyprint lang-js linenums prettyprinted"><ol class="linenums"><li class="L0"><span class="kwd">var</span><span class="pln"> beautifulSwitch </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Switch8</span><span class="pun">({</span><span class="pln"> elem</span><span class="pun">:</span><span class="pln"> </span><span class="str">"#myCB"</span><span class="pln"> </span><span class="pun">});</span></li></ol></pre></p>
-
-<h2>
-<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h2>
-
-<h3>
-<a name="elem---string" class="anchor" href="#elem---string"><span class="octicon octicon-link"></span></a>elem - <em>string</em>
+  <a name="elem---string" class="anchor" href="#elem---string"><span class="octicon octicon-link"></span></a>elem - <em>string</em>
 </h3>
 
 <p>Defines the element</p>
 
 <h3>
-<a name="checked---boolean" class="anchor" href="#checked---boolean"><span class="octicon octicon-link"></span></a>checked - <em>boolean</em>
+  <a name="checked---boolean" class="anchor" href="#checked---boolean"><span class="octicon octicon-link"></span></a><i class="fa fa-toggle-on"></i> checked - <em>boolean</em>
 </h3>
 
 <p>Sets the switch's state</p>
 
 <h3>
-<a name="disabled---boolean" class="anchor" href="#disabled---boolean"><span class="octicon octicon-link"></span></a>disabled - <em>boolean</em>
+  <a name="disabled---boolean" class="anchor" href="#disabled---boolean"><span class="octicon octicon-link"></span></a><i class="fa fa-toggle-on disabled"></i> disabled - <em>boolean</em>
 </h3>
 
 <p>Prevents user from toggling the switch</p>
 
 <h3>
-<a name="checkedcolor---string-hex-rgba" class="anchor" href="#checkedcolor---string-hex-rgba"><span class="octicon octicon-link"></span></a>checkedColor - <em>string (hex, rgba)</em>
+  <a name="checkedcolor---string-hex-rgba" class="anchor" href="#checkedcolor---string-hex-rgba"><span class="octicon octicon-link"></span></a><i class="fa fa-toggle-on blue"></i> checkedColor - <em>string (hex, rgba)</em>
 </h3>
 
 <p>Changes the color of the checked state</p>
 
 <h3>
-<a name="uncheckedcolor---string-hex-rgba" class="anchor" href="#uncheckedcolor---string-hex-rgba"><span class="octicon octicon-link"></span></a>uncheckedColor - <em>string (hex, rgba)</em>
+  <a name="uncheckedcolor---string-hex-rgba" class="anchor" href="#uncheckedcolor---string-hex-rgba"><span class="octicon octicon-link"></span></a><i class="fa fa-toggle-off red"></i> uncheckedColor - <em>string (hex, rgba)</em>
 </h3>
 
 <p>Changes the color of the unchecked state</p>
-      </section>
+</section>
 
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+</div>
+
+</body>
 </html>
