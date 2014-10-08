@@ -1,121 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Switch8 : Beautiful switches that look like iOS 7 and iOS 8 switches.">
+    <title>Switch8 by theawesomecoder61</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="http://theawesomecoder61.github.io/Switch8/stylesheets/stylesheet.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://raw.githack.com/theawesomecoder61/Switch8/master/switch8.css">
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://raw.githack.com/theawesomecoder61/Switch8/master/switch8.js"></script>
-    <title>Switch8</title>
-    <style>
-      .fa-toggle-on {
-        color: #4cd964;
-      }
-    </style>
-    <script>
-      $(document).ready(function() {
-
-      });
-    </script>
   </head>
-
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/theawesomecoder61/Switch8">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/theawesomecoder61/Switch8/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/theawesomecoder61/Switch8/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-      <header class="inner">
-        <a id="forkme_banner" href="https://github.com/theawesomecoder61/Switch8"><i class="fa fa-github fa-2x"></i><br/>View on GitHub</a>
+    <div class="wrapper">
 
-        <h1 id="project_title"><i class="fa fa-toggle-on"></i> Switch8</h1>
-        <h2 id="project_tagline">Beautiful switches that look like iOS 7 and iOS 8 switches.</h2>
-      </header>
+      <section>
+        <div id="title">
+          <h1>Switch8</h1>
+          <p>Beautiful switches that look like iOS 7 and iOS 8 switches.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/theawesomecoder61">theawesomecoder61</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h2>
+<a name="what-do-they-look-like" class="anchor" href="#what-do-they-look-like"><span class="octicon octicon-link"></span></a>What do they look like?</h2>
+
+<table>
+<thead><tr>
+<th>Switch8</th>
+<th align="center">iOS 8</th>
+</tr></thead>
+<tbody><tr>
+<td><img src="http://i.imgur.com/8WNMXgG.png" alt="switch8"></td>
+<td align="center"><img src="http://i.imgur.com/OA7HW81.jpg" alt="ios8"></td>
+</tr></tbody>
+</table><p>They are not the same picture. There is a difference between the two pictures.</p>
+
+<h2>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h2>
+
+<p>Super easy!</p>
+
+<h3>
+<a name="cdn" class="anchor" href="#cdn"><span class="octicon octicon-link"></span></a>CDN</h3>
+
+<p><code>&lt;link rel="stylesheet" href="https://raw.githack.com/theawesomecoder61/Switch8/master/switch8.css"&gt;</code></p>
+
+<p><code>&lt;script src="https://raw.githack.com/theawesomecoder61/Switch8/master/switch8.js"&gt;&lt;/script&gt;</code></p>
+
+<p><strong>Note!</strong> The links above are hosted on this website, so they may be slow sometimes.</p>
+
+<h3>
+<a name="locally" class="anchor" href="#locally"><span class="octicon octicon-link"></span></a>Locally</h3>
+
+<p><code>&lt;link rel="stylesheet" href="path/to/switch8.css"&gt;</code></p>
+
+<p><code>&lt;script src="path/to/switch8.js"&gt;&lt;/script&gt;</code></p>
+
+<h2>
+<a name="demos" class="anchor" href="#demos"><span class="octicon octicon-link"></span></a>Demos</h2>
+
+<h2>
+<a name="using-switch8" class="anchor" href="#using-switch8"><span class="octicon octicon-link"></span></a>Using Switch8</h2>
+
+<h3>
+<a name="html" class="anchor" href="#html"><span class="octicon octicon-link"></span></a>HTML</h3>
+
+<p><code>&lt;input type="checkbox" class="switch8"&gt;</code></p>
+
+<p>HTML customizations coming in version 2.0!</p>
+
+<h4>
+<a name="or" class="anchor" href="#or"><span class="octicon octicon-link"></span></a>or</h4>
+
+<h3>
+<a name="javascript" class="anchor" href="#javascript"><span class="octicon octicon-link"></span></a>Javascript</h3>
+
+<p><code>var beautifulSwitch = new Switch8({ elem: "#myCB" });</code></p>
+
+<h2>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<h3>
+<a name="elem---string" class="anchor" href="#elem---string"><span class="octicon octicon-link"></span></a>elem - <em>string</em>
+</h3>
+
+<p>Defines the elemen</p>
+
+<h3>
+<a name="checked---boolean" class="anchor" href="#checked---boolean"><span class="octicon octicon-link"></span></a>checked - <em>boolean</em>
+</h3>
+
+<p>Sets the switch's state</p>
+
+<h3>
+<a name="disabled---boolean" class="anchor" href="#disabled---boolean"><span class="octicon octicon-link"></span></a>disabled - <em>boolean</em>
+</h3>
+
+<p>Prevents user from toggling the switch</p>
+
+<h3>
+<a name="checkedcolor---string-hex-rgba" class="anchor" href="#checkedcolor---string-hex-rgba"><span class="octicon octicon-link"></span></a>checkedColor - <em>string (hex, rgba)</em>
+</h3>
+
+<p>Changes the color of the checked state</p>
+
+<h3>
+<a name="uncheckedcolor---string-hex-rgba" class="anchor" href="#uncheckedcolor---string-hex-rgba"><span class="octicon octicon-link"></span></a>uncheckedColor - <em>string (hex, rgba)</em>
+</h3>
+
+<p>Changes the color of the unchecked state</p>
+      </section>
+
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-      
-        <!-- what do they look like -->
-        <h2><a><span class="octicon octicon-link"></span></a>What do they look like?</h2>
-        <table>
-          <thead>
-          <tr>
-            <th align="center">Switch8</th>
-            <th align="center">iOS 8</th>
-            </tr>
-            </thead>
-          <tbody>
-          <tr>
-            <td><img src="http://i.imgur.com/8WNMXgG.png" alt="switch8"></td>
-            <td align="center"><img src="http://i.imgur.com/OA7HW81.jpg" alt="ios8"></td>
-            </tr></tbody>
-        </table>
-        <p>They are not the same picture. There is a difference between the two pictures.</p>
-
-        <!-- getting started -->
-        <h2><a><span class="octicon octicon-link"></span></a>Getting started</h2>
-          <p>Super easy!</p>
-          
-          <h3><a><span class="octicon octicon-link"></span></a>CDN</h3>
-            <p><code>&lt;link rel="stylesheet" href="https://raw.githack.com/theawesomecoder61/Switch8/master/switch8.css"&gt;</code></p>
-            <p><code>&lt;script src="https://raw.githack.com/theawesomecoder61/Switch8/master/switch8.js"&gt;&lt;/script&gt;</code></p>
-            <p><b>Note!</b> The links above are hosted on GitHack, so they may be slow sometimes.</p>
-          
-          <h3><a><span class="octicon octicon-link"></span></a>Locally</h3>
-            <p><code>&lt;link rel="stylesheet" href="path/to/switch8.css"&gt;</code></p>
-            <p><code>&lt;script src="path/to/switch8.js"&gt;&lt;/script&gt;</code></p>
-
-        <!-- demos -->
-        <h2><a><span class="octicon octoicon-link"></span></a> Demos</h2>
-        <p data-height="475" data-theme-id="0" data-slug-hash="ueAgK" data-default-tab="result" data-user="theawesomecoder61" class='codepen'>See the Pen <a href='http://codepen.io/theawesomecoder61/pen/ueAgK/'>Switch8 Demo</a> by Andrew (<a href='http://codepen.io/theawesomecoder61'>@theawesomecoder61</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-        <script async src="//codepen.io/assets/embed/ei.js"></script>
-        
-        <!-- using switch8 -->
-        <h2><a><span class="octicon octicon-link"></span></a>Using Switch8</h2>
-        
-          <h3><a><span class="octicon octicon-link"></span></a>HTML</h3>
-            <code>&lt;input type="checkbox" class="switch8"&gt;</code>
-            
-          <h4>or</h4>
-          
-          <h3><a><span class="octicon octicon-link"></span></a>Javascript</h3>
-            <code>var beautifulSwitch = new Switch8({ elem: "#myCB" });</code>
-
-        <!-- options -->
-        <h2><a><span class="octicon octicon-link"></span></a>Options</h2>
-        
-          <h3><a><span class="octicon octicon-link"></span></a>elem - string</h3>
-            <p>Defines the element's query</p>
-  
-          <h3><a><span class="octicon octicon-link"></span></a>checked - boolean</h3>
-            <p>Sets the switch's state</p>
-  
-          <h3><a><span class="octicon octicon-link"></span></a>disabled - boolean</h3>
-            <p>Prevents user from toggling the switch</p>
-            
-          <h3><a><span class="octicon octicon-link"></span></a>checkedColor - string (hex, rgba)</h3>
-            <p>Changes the color of the checked state</p>
-            
-          <h3><a><span class="octicon octicon-link"></span></a>uncheckedColor - string (hex, rgba)</h3>
-            <p>Changes the color of the unchecked state</p>
-            
-        </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Switch8 owned and maintained by <a href="https://github.com/theawesomecoder61">theawesomecoder61</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-        <p>iOS is a registered trademark of Apple Inc. All rights reserved. Switch8 or theawesomecoder61 are not affiliated with iOS or Apple Inc.</p>
-      </footer>
-    </div>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
   </body>
 </html>
