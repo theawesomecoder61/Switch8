@@ -19,31 +19,8 @@ var Switch8 = function(options) {
     el.setAttribute("disabled", "disabled");
   }
 
-  // colors
-    // checked
-    if(el.checked && options.checkedColor !== "") {
-      el.style.background = options.checkedColor;
-    } else {
-      if(!el.checked || options.checkedColor == "") {
-        el.style.background = "#e5e5e5";
-      }
-    }
-    // unchecked
-    if(!el.checked && options.uncheckedColor !== "") {
-      el.style.background = options.uncheckedColor;
-    } else {
-      if(el.checked || options.uncheckedColor == "") {
-        if(options.checkedColor !== "") {
-      	  el.style.background = options.checkedColor;
-        } else {
-      	  el.style.background = "#4cd964";
-        }
-      }
-    }
-
-  // toggle colors
-  el.onclick = function() {
-    // checked
+  // load colors
+  if(el.getAttribute("data-checkedColor") == "" || el.getAttribute("data-uncheckedColor") == "") {
     if(el.checked && options.checkedColor !== "") {
       el.style.background = options.checkedColor;
     } else {
@@ -60,6 +37,71 @@ var Switch8 = function(options) {
       }
       if(options.checkedColor !== "" && options.uncheckedColor !== "") {
         el.style.background = options.checkedColor;
+      }
+    }
+  } else {
+    // checked with html
+    if(el.checked && el.getAttribute("data-checkedColor") !== "") {
+      el.style.background = el.getAttribute("data-checkedColor");
+    } else {
+      if(!el.checked || el.getAttribute("data-checkedColor") == "") {
+        el.style.background = "#e5e5e5";
+      }
+    }
+    // unchecked
+    if(!el.checked && el.getAttribute("data-uncheckedColor") !== "") {
+      el.style.background = el.getAttribute("data-uncheckedColor");
+    } else {
+      if(el.getAttribute("data-checkedColor") !== "" || el.getAttribute("data-uncheckedColor") == "") {
+        el.style.background = "#4cd964";
+      }
+      if(el.getAttribute("data-checkedColor") !== "" && el.getAttribute("data-uncheckedColor") !== "") {
+        el.style.background = el.getAttribute("data-checkedColor");
+      }
+    }
+  }
+
+  // toggle colors
+  el.onclick = function() {
+
+    if(el.getAttribute("data-checkedColor") == "" || el.getAttribute("data-uncheckedColor") == "") {
+      if(el.checked && options.checkedColor !== "") {
+        el.style.background = options.checkedColor;
+      } else {
+        if(!el.checked || options.checkedColor == "") {
+          el.style.background = "#e5e5e5";
+        }
+      }
+      // unchecked
+      if(!el.checked && options.uncheckedColor !== "") {
+        el.style.background = options.uncheckedColor;
+      } else {
+        if(options.checkedColor !== "" || options.uncheckedColor == "") {
+          el.style.background = "#4cd964";
+        }
+        if(options.checkedColor !== "" && options.uncheckedColor !== "") {
+          el.style.background = options.checkedColor;
+        }
+      }
+    } else {
+      // checked with html
+      if(el.checked && el.getAttribute("data-checkedColor") !== "") {
+        el.style.background = el.getAttribute("data-checkedColor");
+      } else {
+        if(!el.checked || el.getAttribute("data-checkedColor") == "") {
+          el.style.background = "#e5e5e5";
+        }
+      }
+      // unchecked
+      if(!el.checked && el.getAttribute("data-uncheckedColor") !== "") {
+        el.style.background = el.getAttribute("data-uncheckedColor");
+      } else {
+        if(el.getAttribute("data-checkedColor") !== "" || el.getAttribute("data-uncheckedColor") == "") {
+          el.style.background = "#4cd964";
+        }
+        if(el.getAttribute("data-checkedColor") !== "" && el.getAttribute("data-uncheckedColor") !== "") {
+          el.style.background = el.getAttribute("data-checkedColor");
+        }
       }
     }
   }
