@@ -15,7 +15,7 @@ Beautiful switches that look like iOS 7 and iOS 8 switches.
 They are not the same picture. There is a difference between the two pictures.
 
 ## Getting started
-Go to the [Switch8](http://theawesomecoder61.github.io/Switch8/) website and learn more there.
+Go to the [Switch8](http://bit.ly/switch8-js) website and learn more there.
 
 ## Credits
 Based off of fnky's [CSS3-UISwitch](https://github.com/fnky/css3-uiswitch).
