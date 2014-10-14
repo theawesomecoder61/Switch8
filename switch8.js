@@ -1,26 +1,44 @@
+  /*
+  
+  Switch8 version 2.7
+  
+  (C) 2014 theawesomecoder61
+  
+  What's new?
+  - the js file contains what's new for that version (like this one)
+  - makes your input a checkbox if it's not one already
+  - new option! htmlAttr (boolean) will allow you to use HTML attributes to customize your Switch8
+  
+  */
+  
 var Switch8 = function(options) {
   // variables
   var el = document.querySelector(options.elem);
 
-  // adding .switch8, if .switch8 exists, say something
+  // adding .switch8, if .switch8 exists say something
   if(!el.classList.contains("switch8")) {
     el.classList.add("switch8");
   } else {
-    console.log("Switch already is Switch8'd! Ya dun goofed!");
+    console.log(options.elem + " is already Switch8'd! Ya dun goofed!");
   }
 
-  // checked
+  // make sure the element is a checkbox, if not make it one
+  if(el.getAttribute("type") !== "checkbox") {
+    el.setAttribute("type", "checkbox");
+  }
+  
+  // checked?
   if(options.checked) {
     el.setAttribute("checked", "checked");
   }
 
-  // disabled
+  // disabled?
   if(options.disabled) {
     el.setAttribute("disabled", "disabled");
   }
 
   // load colors
-  if(el.getAttribute("data-checkedColor") == "" || el.getAttribute("data-uncheckedColor") == "") {
+  if(!options.htmlAttr || options.htmlAttr == "no" || options.htmlAttr === null) {
     if(el.checked && options.checkedColor !== "") {
       el.style.background = options.checkedColor;
     } else {
@@ -64,7 +82,8 @@ var Switch8 = function(options) {
   // toggle colors
   el.onclick = function() {
 
-    if(el.getAttribute("data-checkedColor") == "" || el.getAttribute("data-uncheckedColor") == "") {
+    if(!options.htmlAttr || options.htmlAttr == "no" || options.htmlAttr === null) {
+      // checked,  customized with js
       if(el.checked && options.checkedColor !== "") {
         el.style.background = options.checkedColor;
       } else {
@@ -72,7 +91,7 @@ var Switch8 = function(options) {
           el.style.background = "#e5e5e5";
         }
       }
-      // unchecked
+      // unchecked,  customized with js
       if(!el.checked && options.uncheckedColor !== "") {
         el.style.background = options.uncheckedColor;
       } else {
@@ -84,7 +103,7 @@ var Switch8 = function(options) {
         }
       }
     } else {
-      // checked with html
+      // checked,  customized with html
       if(el.checked && el.getAttribute("data-checkedColor") !== "") {
         el.style.background = el.getAttribute("data-checkedColor");
       } else {
@@ -92,7 +111,7 @@ var Switch8 = function(options) {
           el.style.background = "#e5e5e5";
         }
       }
-      // unchecked
+      // unchecked,  customized with html
       if(!el.checked && el.getAttribute("data-uncheckedColor") !== "") {
         el.style.background = el.getAttribute("data-uncheckedColor");
       } else {
