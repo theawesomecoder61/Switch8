@@ -6,7 +6,7 @@
   
   What's new?
   - the js file contains what's new for that version (like this one)
-  - makes your input a checkbox if it's not one already
+  - makes your <input> a checkbox if it's not one already
   - new option! htmlAttr (boolean) will allow you to use HTML attributes to customize your Switch8
   
   */
