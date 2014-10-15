@@ -3,8 +3,10 @@ Switch8
 
 Beautiful switches that look like iOS 7 and iOS 8 switches.
 
-### Version 2.0
-- fixed the unchecked color glitch!
+### Version 2.7
+- the js file contains what's new for that version
+- makes your &lt;input&gt; a checkbox if it's not one already
+- new option! htmlAttr (boolean) will allow you to use HTML attributes to customize your Switch8
  
 
 ## What do they look like?
