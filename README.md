@@ -21,17 +21,19 @@ Getting started is super easy!
 
 ### CDN (we host it for you)
 
-`<link rel="stylesheet" href="http://theawesomecoder61.github.io/Switch8/switch8.css">`
-
-`<script src="http://theawesomecoder61.github.io/Switch8/switch8.js"></script>`
+```
+<link rel="stylesheet" href="http://theawesomecoder61.github.io/Switch8/switch8.css">
+<script src="http://theawesomecoder61.github.io/Switch8/switch8.js"></script>
+```
 
 **Note!** The links above are hosted on this website, so they may be slow sometimes.
 
 ### Locally (it's on your computer)
 
-`<link rel="stylesheet" href="path/to/switch8.css">`
-
-`<script src="path/to/switch8.js"></script>`
+```
+<link rel="stylesheet" href="path/to/switch8.css">
+<script src="path/to/switch8.js"></script>
+```
 
 ## Demos
 Check out the [official pen](http://codepen.io/theawesomecoder61/pen/ueAgK) for the demos.
