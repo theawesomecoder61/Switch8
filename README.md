@@ -1,6 +1,4 @@
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-<i class="fa fa-toggle-on" style="color: #4cd964"></i> Switch></i> Switch8
+Switch8
 =======
 
 Beautiful switches that look like iOS 7 and iOS 8 switches.
@@ -18,7 +16,7 @@ Beautiful switches that look like iOS 7 and iOS 8 switches.
 
 They are not the same picture. There is a difference between the two pictures.
 
-## <i class="fa fa-flag-checkered"></i> Getting started
+## Getting started
 Getting started is super easy!
 
 ### CDN (we host it for you)
@@ -35,10 +33,10 @@ Getting started is super easy!
 
 `<script src="path/to/switch8.js"></script>`
 
-## <i class="fa fa-play"></i> Demos
+## Demos
 Check out the [official pen](http://codepen.io/theawesomecoder61/pen/ueAgK) for the demos.
 
-## <i class="fa fa-cogs"></i> Options
+## Options
 
 ### Basic 
 #### elem - string
@@ -70,8 +68,8 @@ Changes the color of the checked state
 #### uncheckedColor - string (hex, rgba)
 Changes the color of the unchecked state
 
-## <i class="fa fa-align-left"></i> Credits
+## Credits
 Based off of fnky's [CSS3-UISwitch](https://github.com/fnky/css3-uiswitch).
 
-## <i class="fa fa-copyright"></i> Copyright stuff
+## Copyright stuff
 iOS is a registered trademark of Apple Inc. All rights reserved. Switch8 or theawesomecoder61 are not affiliated with iOS or Apple Inc.
