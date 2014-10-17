@@ -11,6 +11,7 @@ Beautiful switches that look like iOS 7 and iOS 8 switches.
 ### Version 3.0 (coming out 10/20/2014 or earlier)
 - rewritten JS file, now with a real *var awesomeness = new Switch8("#elem")* instead of the existing fake one
 - well, HTML attributes were nice while they lasted (they're going away, so don't worry you can still get version 2.7)
+- a kinder message (in the console) when an element already has *.switch8*
 
 ## What do they look like?
 | Switch8        | iOS 8           |
