@@ -5,12 +5,12 @@ Beautiful switches that look like iOS 7 and iOS 8 switches.
 
 ### Version 2.7 (current version)
 - the js file contains what's new for that version
-- makes your &lt;input&gt; a checkbox if it's not one already
+- makes your `<input>` a checkbox if it's not one already
 - new option! htmlAttr (boolean) will allow you to use HTML attributes to customize your Switch8
 
-### Version 3.0 (coming out 10/20/2014 or earlier)
-- rewritten JS file, now with a real *var awesomeness = new Switch8("#elem")* instead of the existing fake one
-- well, HTML attributes were nice while they lasted (they're going away, so don't worry you can still get version 2.7)
+### Version 3.0 (coming out 10/23/2014 or earlier)
+- rewritten JS file, now with a real `var awesomeness = new Switch8("#elem")` instead of the existing fake one
+- HTML attributes were nice while they lasted (they're going away, so don't worry you can still get version 2.7)
 - a kinder message (in the console) when an element already has *.switch8*
 
 ## What do they look like?
@@ -77,7 +77,7 @@ Changes the color of the checked state
 Changes the color of the unchecked state
 
 ## Credits
-Based off of fnky's [CSS3-UISwitch](https://github.com/fnky/css3-uiswitch).
+Based off of [this article](http://wd.dizaina.net/en/experiments/ios7-style-switch/).
 
 ## Copyright stuff
 iOS is a registered trademark of Apple Inc. All rights reserved. Switch8 or theawesomecoder61 are not affiliated with iOS or Apple Inc.
