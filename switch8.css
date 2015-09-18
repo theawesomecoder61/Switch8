@@ -143,3 +143,10 @@
 .switch8::after {
   background: white;
 }
+
+
+/* MINI */
+.switch8.mini {
+  height: 11px;
+  width: 31px;
+}
