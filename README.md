@@ -1,14 +1,14 @@
 Switch8
 =======
 
-Beautiful switches that look like iOS 7 and iOS 8 switches.
+Beautiful switches that look like iOS 7-9 switches.
 
 ### Version 2.7 (current version)
 - the js file contains what's new for that version
 - makes your `<input>` a checkbox if it's not one already
 - new option! htmlAttr (boolean) will allow you to use HTML attributes to customize your Switch8
 
-### Version 3.0 (coming out 11/10/2014 or earlier)
+### Version 3.0 (coming out 2/2015 or later)
 - rewritten JS file, now with a real `var awesomeness = new Switch8("#elem")` instead of the existing fake one
 - HTML attributes were nice while they lasted (they're going away, so don't worry you can still get version 2.7)
 - a kinder message (in the console) when an element already has *.switch8*
