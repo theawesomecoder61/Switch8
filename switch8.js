@@ -22,6 +22,11 @@ var Switch8 = function(options) {
     console.log(options.elem + " is already Switch8'd! Ya dun goofed!");
   }
 
+  // mini
+  if(options.mini) {
+    el.classList.add("mini");
+  }
+  
   // make sure the element is a checkbox, if not make it one
   if(el.getAttribute("type") !== "checkbox") {
     el.setAttribute("type", "checkbox");
