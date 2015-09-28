@@ -1,3 +1,14 @@
+  /*
+  
+  Switch8 version 3.0
+  
+  (C) 2014-2015 theawesomecoder61
+  
+  What's new?
+  - a new switch size: mini
+  
+  */
+
 .switch8 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -142,4 +153,26 @@
 }
 .switch8::after {
   background: white;
+}
+
+
+/* MINI */
+.switch8.mini {
+  height: 21px;
+  width: 33px;
+}
+.switch8.mini::before {
+  height: 17px;
+  width: 17px;
+}
+.switch8.mini::after {
+  height: 17px;
+  width: 17px;
+}
+.switch8.mini:active::after {
+  width: 20px;
+}
+.switch8.mini:disabled:active::before {
+  height: 21px;
+  width: 33px;
 }

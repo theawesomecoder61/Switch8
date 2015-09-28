@@ -1,13 +1,11 @@
   /*
   
-  Switch8 version 2.7
+  Switch8 version 3.0
   
-  (C) 2014 theawesomecoder61
+  (C) 2014-2015 theawesomecoder61
   
   What's new?
-  - the js file contains what's new for that version (like this one)
-  - makes your <input> a checkbox if it's not one already
-  - new option! htmlAttr (boolean) will allow you to use HTML attributes to customize your Switch8
+  - a new switch size: mini
   
   */
   
@@ -22,6 +20,11 @@ var Switch8 = function(options) {
     console.log(options.elem + " is already Switch8'd! Ya dun goofed!");
   }
 
+  // mini
+  if(options.mini) {
+    el.classList.add("mini");
+  }
+  
   // make sure the element is a checkbox, if not make it one
   if(el.getAttribute("type") !== "checkbox") {
     el.setAttribute("type", "checkbox");
