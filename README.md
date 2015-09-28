@@ -6,7 +6,7 @@ Beautiful switches that look like iOS 7-9 switches.
 ### Version 3.0 (current version)
 - new switch size: mini
 
-### Version 3.1 (coming out 2/2015 or later)
+### Version 3.1 (coming out 10/10/2015 or later)
 - rewritten JS file, now with a real `var awesomeness = new Switch8("#elem")` instead of the existing fake one
 - HTML attributes were nice while they lasted (they're going away, so don't worry you can still get version 2.7)
 - a kinder message (in the console) when an element already has *.switch8*
